@@ -1,0 +1,18 @@
+name	start	1000
+inloop	td	indev
+	resb	2
+	rd	indev
+	stch	data
+.
+.
+.
+outlp	td	outdev
+	jeq	outlp
+	ldch	data
+	wd	outdev
+.
+.
+.
+indev	bytf	x`f1`
+outdev	byte	x`05`
+data	resb	1

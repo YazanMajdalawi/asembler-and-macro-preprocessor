@@ -1,0 +1,22 @@
+lbel1	inst1	oper1
+.....
+mcnam	macro	&pr1,&pr2,&pr3
+	minst1	oper1
+	minst2	&pr2
+	minst3	
+nesmac	macro	&p1,&p2
+	nmi1	&p1[&p2]
+	nmi2	op
+	mend	
+test	minst4	&pr3	
+	mend	
+.....
+mac	macro	&zo
+	mcnam	h1,&zo,h3
+	mend	
+....
+	mac	yaz
+lbel3	inst4	oper2
+
+
+

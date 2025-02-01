@@ -1,0 +1,19 @@
+p8	start	0
+...
+mov	macro	&from,&to
+	ldch	&from
+	stch	&to
+	lds	&from
+	ldt	&to
+	jsub	movertn
+	mend	
+...
+firsd	move	a,b
+.------
+	move	c,d
+.------
+	rsub	
+a	resb	1
+b	resb	1
+c	resb	500
+d	resb	500

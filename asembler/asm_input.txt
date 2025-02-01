@@ -1,0 +1,20 @@
+.comment
+.d	start	30
+copy	start	1000
+	resw	3
+first	stl	rloop
+cloop	jsub	copy
+	lda	cloop
+.asdfghjfd asdgf
+
+
+	comp	first
+	byte	c`EOF`
+three	word	3
+. this is a comment 	hi	ho
+	resw	2
+	stl	yazan
+yazan	resb	4096
+rloop	td	yazan,x
+	byte	x`acff`
+. 
